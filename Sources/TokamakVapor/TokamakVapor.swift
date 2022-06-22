@@ -12,7 +12,7 @@ extension Response {
         self.init(
             status: .ok,
             headers: headers,
-            body: .init(string: StaticHTMLRenderer(view).html)
+            body: .init(string: StaticHTMLRenderer(view).render())
         )
     }
 }
